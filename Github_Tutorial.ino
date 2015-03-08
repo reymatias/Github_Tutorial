@@ -22,10 +22,12 @@ void setup()
 void loop() 
 {
   int myValue = 0;
+  int newValue = 0;
   myValue = analogRead(A0);
+  newValue = myValue;
   
   Serial.print("The value is: ");
-  Serial.println(myValue);
+  Serial.println(newValue);
 
   delay(250);
 }
